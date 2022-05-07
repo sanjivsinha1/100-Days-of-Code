@@ -20,7 +20,9 @@ void Selection_sort(int *a,int n){
 int main()
 {
     int n;
+    cout<<"Enter number of elements -";
     cin>>n;
+    cout<<endl<<"Enter elements -"<<endl;
     int a[n];
     for(int i=0;i<n;i++)
     cin>>a[i];
@@ -28,6 +30,7 @@ int main()
     //selection short
    Selection_sort(a,n);
    
+   cout<<"Sorted arry is - "<<endl;
     for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
